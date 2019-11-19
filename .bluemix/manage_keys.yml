@@ -34,6 +34,9 @@ stages:
   jobs:
   - name: Create Build Signer Key
     type: builder
+    curatedDockerImage: default
+    build_type: customimage
+    docker_image: alpine:latest
     script: |
       #!/bin/bash
 
@@ -79,6 +82,9 @@ stages:
   jobs:
   - name: Create Validation Signer Key
     type: builder
+    curatedDockerImage: default
+    build_type: customimage
+    docker_image: alpine:latest
     script: |
       #!/bin/bash
       
@@ -124,6 +130,9 @@ stages:
   jobs:
   - name: Delete Build Signer Key
     type: builder
+    curatedDockerImage: default
+    build_type: customimage
+    docker_image: alpine:latest
     script: |
       #!/bin/bash
 
@@ -169,6 +178,9 @@ stages:
   jobs:
   - name: Delete Validation Signer Key
     type: builder
+    curatedDockerImage: default
+    build_type: customimage
+    docker_image: alpine:latest
     script: |
       #!/bin/bash
       
