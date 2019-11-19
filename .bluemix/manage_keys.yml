@@ -34,9 +34,6 @@ stages:
   jobs:
   - name: Create Build Signer Key
     type: builder
-    curatedDockerImage: default
-    build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
     script: |
       #!/bin/bash
 
@@ -82,9 +79,6 @@ stages:
   jobs:
   - name: Create Validation Signer Key
     type: builder
-    curatedDockerImage: default
-    build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
     script: |
       #!/bin/bash
       
@@ -130,9 +124,6 @@ stages:
   jobs:
   - name: Delete Build Signer Key
     type: builder
-    curatedDockerImage: default
-    build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
     script: |
       #!/bin/bash
 
@@ -178,9 +169,6 @@ stages:
   jobs:
   - name: Delete Validation Signer Key
     type: builder
-    curatedDockerImage: default
-    build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
     script: |
       #!/bin/bash
       
