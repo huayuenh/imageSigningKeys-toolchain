@@ -84,7 +84,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: registry.hub.docker.com/library/docker
+    docker_image: registry.hub.docker.com/library/alpine
     script: |
       #!/bin/bash
       
