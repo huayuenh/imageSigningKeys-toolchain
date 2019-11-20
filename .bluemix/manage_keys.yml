@@ -36,7 +36,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: _/docker:latest
+    docker_image: docker
     script: |
       #!/bin/bash
 
@@ -132,7 +132,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: _/docker:latest
+    docker_image: docker
     script: |
       #!/bin/bash
 
