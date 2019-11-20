@@ -36,7 +36,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: registry.hub.docker.com/r/alpinelinux/docker-cli
+    docker_image: registry.hub.docker.com/alpinelinux/docker-cli
     script: |
       #!/bin/bash
 
