@@ -36,7 +36,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
+    docker_image: alpinelinux/docker-cli:latest
     script: |
       #!/bin/bash
 
@@ -84,7 +84,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
+    docker_image: alpinelinux/docker-cli:latest
     script: |
       #!/bin/bash
       
@@ -132,7 +132,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
+    docker_image: alpinelinux/docker-cli:latest
     script: |
       #!/bin/bash
 
@@ -180,7 +180,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
+    docker_image: alpinelinux/docker-cli:latest
     script: |
       #!/bin/bash
       
