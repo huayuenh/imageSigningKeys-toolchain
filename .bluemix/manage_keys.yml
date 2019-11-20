@@ -55,6 +55,12 @@ stages:
 
         ibmcloud login --apikey "$IBM_CLOUD_API_KEY" -r "$IBMCLOUD_TARGET_REGION"
         
+        curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
+        add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+        apt-get update
+        apt-get install -y docker-ce netcat 
+        apt-get -q clean
+        rm -rf /var/lib/apt/lists
         DEVOPS_SIGNER="$DEVOPS_BUILD_SIGNER"
         source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/signing_utils.sh")
         source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/create_signer.sh")
