@@ -40,7 +40,7 @@ stages:
     script: |
       #!/bin/bash
 
-      # Restore root & repository keys
+      # Restore root & repository  keys
       if [ -z "$VAULT_INSTANCE" ]; then
         echo "No op"
       else
