@@ -34,12 +34,9 @@ stages:
   jobs:
   - name: Create Build Signer Key
     type: builder
-    curatedDockerImage: default
-    build_type: customimage
-    docker_image: registry.hub.docker.com/library/alpine:latest
+    build_type: shell
     script: |
       #!/bin/bash
-
       # Restore root & repository keys
       if [ -z "$VAULT_INSTANCE" ]; then
         echo "No op"
