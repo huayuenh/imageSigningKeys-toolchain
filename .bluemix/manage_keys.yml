@@ -61,6 +61,11 @@ stages:
         apt-get install -y docker-ce netcat 
         apt-get -q clean
         rm -rf /var/lib/apt/lists
+        #apk add docker
+        #apk update
+        #service docker start
+        #docker --version
+        echo "START KEY CREATION"
         DEVOPS_SIGNER="$DEVOPS_BUILD_SIGNER"
         source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/signing_utils.sh")
         source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/create_signer.sh")
