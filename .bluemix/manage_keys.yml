@@ -36,7 +36,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: registry.hub.docker.com/library/alpine
+    docker_image: registry.hub.docker.com/library/alpine:latest
     script: |
       #!/bin/bash
 
@@ -84,7 +84,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: registry.hub.docker.com/library/alpine
+    docker_image: registry.hub.docker.com/library/docker:latest
     script: |
       #!/bin/bash
       
