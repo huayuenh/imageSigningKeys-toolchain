@@ -40,7 +40,11 @@ stages:
     script: |
       #!/bin/sh
       # Restore root & repository  keys
-      echo "loaded"
+      if [ -z "$VAULT_INSTANCE" ]; then
+        echo "No op"
+      else
+        echo "DO SOMETHING"
+      fi
 - name: Create Validation Signer Key
   triggers:
   - type: stage
