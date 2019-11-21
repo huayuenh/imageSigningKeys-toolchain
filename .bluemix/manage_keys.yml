@@ -49,6 +49,9 @@ stages:
       # install ibmcloud cli
       curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
 
+      #install bash 
+      apk add --no-cache bash
+
       if [ -z "$VAULT_INSTANCE" ]; then
         echo "No op"
       else
