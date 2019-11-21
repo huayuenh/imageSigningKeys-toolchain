@@ -44,6 +44,8 @@ stages:
       apk update
       apk add curl
 
+      # install openssl
+      apk add --no-cache openssl
       # install ibmcloud cli
       curl -fsSL https://clis.cloud.ibm.com/install/linux | sh
 
