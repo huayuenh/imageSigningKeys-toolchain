@@ -36,7 +36,7 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: ibmcom/pipeline-base-image:latest
+    docker_image: ibmcom/ibm-cloud-developer-tools-amd64:latest
     script: |
       #!/bin/bash
       # Restore root & repository  keys
