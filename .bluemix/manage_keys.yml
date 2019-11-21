@@ -58,7 +58,7 @@ stages:
         #ibmcloud login --apikey "$IBM_CLOUD_API_KEY" -r "$IBMCLOUD_TARGET_REGION"
         
         DEVOPS_SIGNER="$DEVOPS_BUILD_SIGNER"
-        #source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/signing_utils.sh")
+        source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/signing_utils.sh")
         #source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/create_signer.sh")
       fi
 - name: Create Validation Signer Key
