@@ -38,7 +38,7 @@ stages:
     build_type: customimage
     docker_image: ibmcom/pipeline-base-image:latest
     script: |
-      #!/bin/sh
+      #!/bin/bash
       # Restore root & repository  keys
       # install curl
       #apk update
