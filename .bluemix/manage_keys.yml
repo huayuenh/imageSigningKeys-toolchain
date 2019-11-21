@@ -34,8 +34,9 @@ stages:
   jobs:
   - name: Create Build Signer Key
     type: builder
+    curatedDockerImage: default
     build_type: customimage
-    docker_image: alpinelinux/docker-cli
+    docker_image: alpinelinux/docker-cli:latest
     script: |
       #!/bin/bash
       set -x
