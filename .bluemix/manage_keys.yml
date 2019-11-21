@@ -66,7 +66,11 @@ stages:
         
         DEVOPS_SIGNER="$DEVOPS_BUILD_SIGNER"
         curl -sSL -o signing_utils.sh "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/signing_utils.sh"
+        chmod +x signing_utils.sh
+        . ./signing_utils.sh
         curl -sSL -o create_signer.sh "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/create_signer.sh"
+        chmod +x create_signer.sh
+        . ./create_signer.sh
       fi
 - name: Create Validation Signer Key
   triggers:
