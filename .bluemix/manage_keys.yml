@@ -38,7 +38,7 @@ stages:
     build_type: customimage
     docker_image: alpinelinux/docker-cli:latest
     script: |
-      #!/bin/bash
+      #!/bin/sh
       set -x
       # Restore root & repository  keys
       if [ -z "$VAULT_INSTANCE" ]; then
@@ -86,7 +86,7 @@ stages:
     build_type: customimage
     docker_image: alpinelinux/docker-cli:latest
     script: |
-      #!/bin/bash
+      #!/bin/sh
       
       # Restore  keys
       if [ -z "$VAULT_INSTANCE" ]; then
@@ -134,7 +134,7 @@ stages:
     build_type: customimage
     docker_image: alpinelinux/docker-cli:latest
     script: |
-      #!/bin/bash
+      #!/bin/sh
 
       # Restore root & repository keys
       if [ -z "$VAULT_INSTANCE" ]; then
@@ -182,7 +182,7 @@ stages:
     build_type: customimage
     docker_image: alpinelinux/docker-cli:latest
     script: |
-      #!/bin/bash
+      #!/bin/sh
       
       # Restore  keys
       if [ -z "$VAULT_INSTANCE" ]; then
