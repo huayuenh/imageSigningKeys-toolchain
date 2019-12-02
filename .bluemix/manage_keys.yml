@@ -36,10 +36,10 @@ stages:
     type: builder
     curatedDockerImage: default
     build_type: customimage
-    docker_image: jauninb/pbi-docker:latest
+    docker_image: ibmcom/pipeline-base-image:latest
     script: |
       #!/bin/bash
-
+      source <(curl -sSL "https://raw.githubusercontent.com/huayuenh/commons/master/scripts/image_signing/add_docker.sh")
       # Restore root & repository keys
       if [ -z "$VAULT_INSTANCE" ]; then
         echo "No op"
