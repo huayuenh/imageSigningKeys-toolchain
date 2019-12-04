@@ -40,6 +40,8 @@ stages:
     script: |
       #!/bin/bash
       source <(curl -sSL "https://raw.githubusercontent.com/open-toolchain/commons/master/scripts/image_signing/add_docker.sh")
+      source <(curl -sSL "https://raw.githubusercontent.com/huayuenh/commons/codenotary/scripts/image_signing/add_vchain.sh")
+      vcn login
       # Restore root & repository keys
       if [ -z "$VAULT_INSTANCE" ]; then
         echo "No op"
